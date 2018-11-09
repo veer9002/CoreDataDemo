@@ -17,9 +17,9 @@ extension Student {
         return NSFetchRequest<Student>(entityName: "Student")
     }
 
-    @NSManaged public var name: NSObject?
-    @NSManaged public var address: NSObject?
-    @NSManaged public var city: NSObject?
-    @NSManaged public var mobile: NSObject?
+    @NSManaged public var name: String?
+    @NSManaged public var address: String?
+    @NSManaged public var city: String?
+    @NSManaged public var mobile: String?
 
 }
