@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BDACC95221951F540049E703 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDACC95121951F540049E703 /* ListTableViewController.swift */; };
+		BDACC954219523D20049E703 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDACC953219523D20049E703 /* ListTableViewCell.swift */; };
 		BDAE8A51218D9A2900676DFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAE8A50218D9A2900676DFA /* AppDelegate.swift */; };
 		BDAE8A53218D9A2900676DFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAE8A52218D9A2900676DFA /* ViewController.swift */; };
 		BDAE8A56218D9A2900676DFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDAE8A54218D9A2900676DFA /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		BDACC95121951F540049E703 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		BDACC953219523D20049E703 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		BDAE8A4D218D9A2900676DFA /* CoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDAE8A50218D9A2900676DFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BDAE8A52218D9A2900676DFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				BDAE8A57218D9A2900676DFA /* CoreDataDemo.xcdatamodeld */,
 				BDAE8A6C218DAA1800676DFA /* DatabaseHelper.swift */,
 				BDACC95121951F540049E703 /* ListTableViewController.swift */,
+				BDACC953219523D20049E703 /* ListTableViewCell.swift */,
 			);
 			path = CoreDataDemo;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BDAE8A53218D9A2900676DFA /* ViewController.swift in Sources */,
+				BDACC954219523D20049E703 /* ListTableViewCell.swift in Sources */,
 				BDAE8A67218DA48500676DFA /* Student+CoreDataClass.swift in Sources */,
 				BDAE8A59218D9A2900676DFA /* CoreDataDemo.xcdatamodeld in Sources */,
 				BDAE8A51218D9A2900676DFA /* AppDelegate.swift in Sources */,

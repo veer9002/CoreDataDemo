@@ -70,7 +70,7 @@
                                 </state>
                                 <connections>
                                     <action selector="saveAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zXC-ng-6Wf"/>
-                                    <segue destination="kW8-nR-XOE" kind="show" id="MK5-Vf-sUh"/>
+                                    <action selector="showAllBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i6C-xF-v2P"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -109,7 +109,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="107" id="QvV-BN-1l3">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="107" id="QvV-BN-1l3" customClass="ListTableViewCell" customModule="CoreDataDemo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="107"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QvV-BN-1l3" id="fS1-Ji-nW8">
@@ -153,6 +153,12 @@
                                         <constraint firstItem="khf-mk-Nx4" firstAttribute="top" secondItem="fS1-Ji-nW8" secondAttribute="top" constant="16" id="yWd-2R-zLY"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="lblAddress" destination="ifs-3S-q70" id="gvY-Ho-b6U"/>
+                                    <outlet property="lblCity" destination="ZV7-Cb-t0b" id="ous-Co-ddT"/>
+                                    <outlet property="lblMobile" destination="a1H-dI-lzt" id="cNx-wc-FRb"/>
+                                    <outlet property="lblName" destination="3pd-6B-Ju9" id="Jos-LD-Lzr"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

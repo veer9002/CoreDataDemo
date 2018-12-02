@@ -10,10 +10,10 @@ import UIKit
 
 class ListTableViewController: UITableViewController {
 
-    
+    var student = [Student]()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        student = DatabaseHelper.sharedInstance.fetchData()
     }
 
     // MARK: - Table view data source
@@ -25,13 +25,15 @@ class ListTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return student.count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ListTableViewCell
+        cell.lblName.text = student[indexPath.row].name
+        cell.lblAddress.text = student[indexPath.row].address
+        cell.lblCity.text = student[indexPath.row].city
+        cell.lblMobile.text = student[indexPath.row].mobile
         return cell
     }
 }

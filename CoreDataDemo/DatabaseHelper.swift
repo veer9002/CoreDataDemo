@@ -20,13 +20,12 @@ class DatabaseHelper {
         student.name = object["name"]
         student.address = object["address"]
         student.city = object["city"]
-        student.city = object["mobile"]
+        student.mobile = object["mobile"]
         do {
             try context?.save()
         } catch {
             print("Data is not saved")
         }
-    
     }
     
     func fetchData() -> [Student] {
@@ -40,7 +39,7 @@ class DatabaseHelper {
         return student
     }
     
-    func edit() {
+    func update() {
         
     }
     
